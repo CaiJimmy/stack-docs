@@ -11,6 +11,8 @@ export default defineUserConfig<DefaultThemeOptions>({
         repo: 'CaiJimmy/hugo-theme-stack',
         docsRepo: 'CaiJimmy/stack-docs',
         editLinks: true,
+        docsBranch: 'master',
+        docsDir: 'docs',
         locales: {
             '/': {
                 selectLanguageName: 'English',
