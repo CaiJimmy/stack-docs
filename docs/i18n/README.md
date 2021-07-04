@@ -1,7 +1,7 @@
 # i18n
 
-```text
-DefaultContentLanguage = "en"
+```yaml
+DefaultContentLanguage: "en"
 ```
 
 Set `DefaultContentLanguage` to desired language:

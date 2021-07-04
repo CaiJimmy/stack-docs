@@ -1,8 +1,8 @@
 # 配置主题
 
-{% hint style="warning" %}
+::: warning
  主题最新的配置文件可以在 [exampleSite/config.yaml](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/exampleSite/config.yaml) 找到，本页面的内容可能会过期。
-{% endhint %}
+:::
 
 Hugo 的配置存放在站点根目录的 `config.yaml` 里（其实也可以使用 TOML，但本主题默认提供的配置文件为 YAML 格式）
 
@@ -84,9 +84,9 @@ RSS 输出文章完整内容
 - `utterances`
 - `vssue`
 
-{% hint style="info" %}
+::: tip
 可以在 `layouts/partials/comments/provider/` 下新建 `{provider}.html` 来添加更多评论系统的支持。
-{% endhint %}
+:::
 
 ## **Widgets**
 主页右侧边栏小部件设置
@@ -126,6 +126,6 @@ Open Graph 标签默认图片
 - `src`：图片地址
 - `local`： 是否为本地图片。如果设置成 `true` ，主题会在站点根目录的 `assets` 文件夹下寻找 `src`
 
-{% hint style="info" %}
+::: tip
 **推荐把图片放在本地**，因为这样能被主题自动裁剪成合适的尺寸。
-{% endhint %}
+:::

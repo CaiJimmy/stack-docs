@@ -25,9 +25,9 @@ You can also download this theme **using Git** \(recommended\), execute the foll
 git clone https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 ```
 
-{% hint style="info" %}
+::: tip
 If you are using Git to manage your Hugo site, add this theme as a submodule.
-{% endhint %}
+:::
 
 ```bash
 git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
@@ -35,9 +35,9 @@ git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-them
 
 If it's your first time using this theme, take a look at `exampleSite` folder, which includes an example `config.yaml` with all available parameters.
 
-{% hint style="warning" %}
+::: warning
 Remove `config.toml` from your site folder.
-{% endhint %}
+:::
 
 In case this is your first time using Hugo, I recommend you copy the content of `exampleSite` to your Hugo site folder. \(_It includes a set of example posts._\)
 

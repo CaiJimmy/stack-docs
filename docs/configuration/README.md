@@ -1,9 +1,9 @@
 # Configuration
 
-{% hint style="warning" %}
+::: tip
 Theme's newest configuration file can be found in [exampleSite/config.yaml](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/exampleSite/config.yaml).   
 Take that file as reference, this page's content might be outdated.
-{% endhint %}
+:::
 
 Theme's example configuration is placed under `params` section of `exampleSite/config.yaml`.
 
@@ -87,9 +87,9 @@ Comment system provider. Available options:
 * `utterances`
 * `remark42`
 
-{% hint style="info" %}
+::: tip
 To add support for more comment system, create `{provider}.html` under `layouts/partials/comments/provider/`.
-{% endhint %}
+:::
 
 ## **Widgets**
 
@@ -130,9 +130,9 @@ All sections has following structure:
 * `src`: Image source
 * `local`: If it's `true`, Hugo will look for `src` under your site's `assets` folder.
 
-{% hint style="info" %}
+::: tip
 **It's recommended to place images locally**. Otherwise, this theme won't be able to crop and optimize it automatically.
-{% endhint %}
+:::
 
 ### `opengraph`
 

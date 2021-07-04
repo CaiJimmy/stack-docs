@@ -4,7 +4,7 @@
 
 Create `_index.md` file under `content/{Taxonomy}/{Term}/`, with following structure:
 
-```text
+```yaml
 title: "{Term}"
 description: "A description here"
 image: "cover.jpg"

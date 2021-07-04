@@ -47,7 +47,7 @@ For example:
 
 `[index.md](http://index.md)` content:
 
-```text
+```markdown
 ---
 title: "Example post"
 description: "Page description"
@@ -70,7 +70,7 @@ tags:
 
 The synaxis used to insert gallery comes from [Typelog](https://blog.typlog.com/images). Thanks to [Lepture](https://lepture.com/) for permission.
 
-```text
+```markdown
 ![Image 1](https://image/src1) ![Image 2](https://image/src2)
 ![Image 3](https://image/src3) ![Image 4](https://image/src4)
 ```
