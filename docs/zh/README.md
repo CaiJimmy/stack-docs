@@ -46,4 +46,4 @@ Licensed under the GNU General Public License v3.0
 * [artchen/hexo-theme-element](https://github.com/artchen/hexo-theme-element)
 * [MunifTanjim/minimo](https://github.com/MunifTanjim/minimo)
 * [lepture/yue.css](https://github.com/lepture/yue.css)
-* Markdown gallery syntax from [Typlog](https://typlog.com/)
+* 相册语法来自 [Typlog](https://typlog.com/)
