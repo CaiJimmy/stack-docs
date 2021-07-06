@@ -3,15 +3,17 @@
 ![](@assets/cover.jpg)
 
 
-### 功能
 
 * 文章图片自带长宽比信息
 * 图片懒加载 \(`loading="lazy"`\)
-* 可以给分类 / 标签添加图片和介绍
-* 归档页面
 * 暗色模式
+* 本地搜索
+* [PhotoSwipe](https://photoswipe.com/) 图片灯箱
+* 归档页面
 * 无 jQuery，纯原生 JavaScript
+* 可以给分类 / 标签添加图片和介绍
 * 无 CSS 框架
+* 目录
 
 文章缩略图使用了 Hugo 的 Image Processing 功能，自动裁剪成合适的大小来优化页面加载速度。缺点是第一次生成站点时耗时会比较长，第二次有缓存后就会恢复到正常速度（我博客生成速度 ~ 500ms ）。
 
@@ -44,4 +46,4 @@ Licensed under the GNU General Public License v3.0
 * [artchen/hexo-theme-element](https://github.com/artchen/hexo-theme-element)
 * [MunifTanjim/minimo](https://github.com/MunifTanjim/minimo)
 * [lepture/yue.css](https://github.com/lepture/yue.css)
-* 相册语法来自 [Typlog](https://typlog.com/)
+* Markdown gallery syntax from [Typlog](https://typlog.com/)

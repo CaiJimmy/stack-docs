@@ -42,6 +42,12 @@ RSS 输出文章完整内容
 ## Sidebar
 与左侧边栏相关的设置。
 
+### `emoji`
+头像底部的 Emoji。留空不显示。
+
+### `subtitle`
+站点介绍
+
 ### `avatar`
 博主头像。
 
@@ -51,17 +57,14 @@ RSS 输出文章完整内容
     例如 `assets/img/avatar.png`, 并填入 `img/avatar.png`.
   - 外部: 头像地址
 
-### `emoji`
-头像底部的 Emoji。留空不显示。
-
-### `subtitle`
-站点介绍
-
 ## Article
 文章页面相关的设置
 
 ### `math`
 在所有文章启用 `KaTeX`
+
+### `toc`
+在所有文章启用目录
 
 ### `license`
 文章协议设置，显示在页面底部
@@ -83,6 +86,7 @@ RSS 输出文章完整内容
 - `remark42`
 - `utterances`
 - `vssue`
+- `waline`
 
 ::: tip
 可以在 `layouts/partials/comments/provider/` 下新建 `{provider}.html` 来添加更多评论系统的支持。

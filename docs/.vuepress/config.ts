@@ -96,7 +96,6 @@ export default defineUserConfig<DefaultThemeOptions>({
         },
         '/zh/': {
             lang: 'zh-CN',
-            title: 'Hugo 主题 Stack',
 
         },
     },
