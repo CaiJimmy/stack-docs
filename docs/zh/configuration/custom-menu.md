@@ -16,7 +16,7 @@ menu:
 
 在 `config.toml` 的底部可以找到菜单的配置，默认的内容如下：
 
-```text
+```toml
 [menu]
     [[menu.main]]
         identifier = "home"
@@ -46,9 +46,7 @@ menu:
 
 ## 配置图标
 
-{% embed url="https://tablericons.com/" %}
-
-主题自带的 SVG 图标来自 Tabler Icons，存放在 `assets/icons` 目录下。
+主题自带的 SVG 图标来自 [Tabler Icons](https://tablericons.com)，存放在 `assets/icons` 目录下。
 
 你可以在站点根目录下新建同名文件夹，并下载更多的图标（参考：[修改主题](https://www.notion.so/jimmycai/18902ecb5832477abc534d9a27b97af9)）
 

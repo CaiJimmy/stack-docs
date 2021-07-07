@@ -14,6 +14,7 @@ Stack is a simple card-style Hugo theme designed for Bloggers, some of its featu
 * No CSS framework, keep it simple and minimal
 * Properly cropped thumbnails
 * Subsection support
+* Table of contents
 
 ## Copyright
 

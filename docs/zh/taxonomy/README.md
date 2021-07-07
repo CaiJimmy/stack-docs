@@ -4,7 +4,7 @@
 
 在 `content/categories/分类名` 下新建文件 `_index.md`，内容如下：
 
-```text
+```md
 ---
 title: "分类名"
 description: "简介 Blablabla"
