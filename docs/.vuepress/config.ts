@@ -28,7 +28,8 @@ export default defineUserConfig<DefaultThemeOptions>({
                         text: "Configuration",
                         children: [
                             '/configuration/README.md',
-                            '/configuration/custom-menu.md'
+                            '/configuration/custom-menu.md',
+                            '/configuration/cache-resources.md'
                         ]
                     },
                     {
@@ -66,7 +67,8 @@ export default defineUserConfig<DefaultThemeOptions>({
                         text: "配置主题",
                         children: [
                             '/zh/configuration/README.md',
-                            '/zh/configuration/custom-menu.md'
+                            '/zh/configuration/custom-menu.md',
+                            '/zh/configuration/cache-resources.md'
                         ]
                     },
                     {

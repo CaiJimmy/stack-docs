@@ -34,14 +34,22 @@ Your support is greatly appreciated :\)
 
 ## Thanks to
 
-* [Vibrant-Colors/node-vibrant](https://github.com/Vibrant-Colors/node-vibrant)
-* [Normalize.css](https://necolas.github.io/normalize.css/)
-* [Tabler icons](https://tablericons.com/)
-* [Pure CSS implementation of Google Photos / 500px image layout](https://github.com/xieranmaya/blog/issues/6)
-* [jonsuh/hamburgers](https://github.com/jonsuh/hamburgers)
-* [PhotoSwipe](https://photoswipe.com/)
-* [artchen/hexo-theme-element](https://github.com/artchen/hexo-theme-element)
-* [MunifTanjim/minimo](https://github.com/MunifTanjim/minimo)
-* [lepture/yue.css](https://github.com/lepture/yue.css)
-* Markdown gallery syntax from [Typlog](https://typlog.com/)
+| Project | Description | Licence |
+| ------- | ----------- | ------- |
+| [PhotoSwipe](https://photoswipe.com/) | For the lightbox effect | [MIT](https://github.com/dimsemenov/PhotoSwipe/blob/master/LICENSE) |
+| [Normalize.css](https://github.com/necolas/normalize.css) | - | [MIT](https://github.com/necolas/normalize.css/blob/master/LICENSE.md) |
+| [Node Vibrant](https://github.com/Vibrant-Colors/node-vibrant) | To extract the color from images | [MIT](https://github.com/Vibrant-Colors/node-vibrant/blob/master/LICENSE.md)
+| [Tabler icons](https://github.com/tabler/tabler-icons) | Default menu icons | [MIT](https://github.com/tabler/tabler-icons/blob/master/LICENSE) |
+| [jonsuh/hamburgers](https://github.com/jonsuh/hamburgers) | Hamburger icon of menu | [MIT](https://github.com/jonsuh/hamburgers/blob/master/LICENSE) |
+| [lepture/yue.css](https://github.com/lepture/yue.css) | Part of it is used for styling article content | MIT |
+| [Typlog](https://typlog.com/) | Where the markdown gallery syntax is borrowed from | The author gave me the permission | 
+| [Pure CSS implementation of Google Photos / 500px image layout](https://github.com/xieranmaya/blog/issues/6) | Used for image gallery | - |
 
+### References
+
+Some references that I took while building this theme:
+
+| Project | Licence|
+| ------- | ------|
+| [artchen/hexo-theme-element](https://github.com/artchen/hexo-theme-element) | [MIT](https://github.com/artchen/hexo-theme-element/blob/master/LICENSE) |
+| [MunifTanjim/minimo](https://github.com/MunifTanjim/minimo) | [MIT](https://github.com/MunifTanjim/minimo/blob/master/LICENSE) |
