@@ -47,7 +47,8 @@ export default defineUserConfig<DefaultThemeOptions>({
                         ]
                     },
                     '/taxonomy/README.md',
-                    '/i18n/README.md'
+                    '/i18n/README.md',
+                    '/faq/README.md'
                 ],
             },
             '/zh/': {
@@ -84,7 +85,8 @@ export default defineUserConfig<DefaultThemeOptions>({
                         ]
                     },
                     '/zh/taxonomy/README.md',
-                    '/zh/i18n/README.md'
+                    '/zh/i18n/README.md',
+                    '/zh/faq/README.md'
                 ],
             },
         },
