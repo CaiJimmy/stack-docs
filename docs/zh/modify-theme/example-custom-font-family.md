@@ -34,7 +34,7 @@ _我博客文章使用的是_[_思源宋体_](https://fonts.google.com/specimen/
 <script>
 		(function () {
 		    const customFont = document.createElement('link');
-		    customFont.href = "<https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap>";
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
 		
 		    customFont.type = "text/css";
 		    customFont.rel = "stylesheet";
