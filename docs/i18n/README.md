@@ -15,5 +15,6 @@ Set `DefaultContentLanguage` to desired language:
 * `zh-cn`: Chinese
 * `es`: Spanish
 * `de`: German
+* `it`: Italian
 
 Translation files are stored under `i18n` folder, PRs for more language support are welcome 😉.
