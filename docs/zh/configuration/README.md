@@ -51,6 +51,7 @@ RSS 输出文章完整内容
 ### `avatar`
 博主头像。
 
+- `enabled`: 是否显示
 - `local` 是否在本地
 - `src`
   - 本地: **请把图片放在站点根目录的 `assets/img` 文件夹下**。
@@ -65,6 +66,9 @@ RSS 输出文章完整内容
 
 ### `toc`
 在所有文章启用目录
+
+### `readingTime`
+在所有文章启用阅读时间
 
 ### `license`
 文章协议设置，显示在页面底部
@@ -83,10 +87,11 @@ RSS 输出文章完整内容
 
 - `disqus`
   - 需要在 config.toml 添加 disqusShortname 字段。参考官方文档： [Configure Disqus](https://gohugo.io/content-management/comments/#configure-disqus)
-- `remark42`
 - `utterances`
+- `remark42`
 - `vssue`
 - `waline`
+- `twikoo`
 
 ::: tip
 可以在 `layouts/partials/comments/provider/` 下新建 `{provider}.html` 来添加更多评论系统的支持。

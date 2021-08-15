@@ -9,3 +9,4 @@
 | hidden      | 隐藏文章（不在首页，归档等页面显示，但是可以直接通过链接访问） | `false`                          |
 | math        | 加载 KaTeX 脚本                                                |                                  |
 | toc         | 显示 / 隐藏目录                                                | `params.article.toc`             |
+| lastmod     | 最后更改时间                                                   |

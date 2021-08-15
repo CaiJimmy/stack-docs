@@ -6,8 +6,8 @@
 
 以下情况需要用到 Hugo Extended 版本：
 
-* 修改 SCSS 文件
-* 或使用 GitHub 仓库的最新版本
+-   修改 SCSS 文件
+-   或使用 GitHub 仓库的最新版本
 
 第一次使用 Hugo 可以参考官方的安装手册：
 
@@ -15,8 +15,14 @@
 
 如果你在使用 Windows，我推荐使用 [Scoop](https://scoop.sh/) 来安装 Hugo：
 
-```text
+```bash
 scoop install hugo-extended
+```
+
+如果使用 [Choco](https://chocolatey.org/)：
+
+```bash
+choco install hugo-extended
 ```
 
 ## 下载主题
