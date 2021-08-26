@@ -24,7 +24,7 @@
 
 ## video
 
-| tag | description |
+| flag | description |
 | :-- | :---------- |
 | src 或者 空白 | 视频文件路径 |
 | autoplay | 自动播放 |
@@ -41,7 +41,7 @@
 
 ## youtube
 
-| tag | description |
+| flag | description |
 | :-- | :---------- |
 | id 或者 空白 | 视频ID |
 | autoplay | 自动播放 |
