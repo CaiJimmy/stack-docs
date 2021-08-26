@@ -84,6 +84,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                         children: [
                             '/zh/writing/README.md',
                             '/zh/writing/supported-front-matter-fields.md',
+                            '/zh/writing/shortcodes.md',
                         ]
                     },
                     '/zh/taxonomy/README.md',
