@@ -24,7 +24,7 @@
 
 ## video
 
-| flag | description |
+| param | description |
 | :-- | :---------- |
 | src 或者 空白 | 视频文件路径 |
 | autoplay | 自动播放 |
@@ -36,12 +36,12 @@
 {{< video "./video.mp4">}}
 
 <!-- Other option -->
-{{< video src="./video.mp4" autopaly=true poster="./video-poster.png" >}}
+{{< video src="./video.mp4" autoplay=true poster="./video-poster.png" >}}
 ```
 
 ## youtube
 
-| flag | description |
+| param | description |
 | :-- | :---------- |
 | id 或者 空白 | 视频ID |
 | autoplay | 自动播放 |
