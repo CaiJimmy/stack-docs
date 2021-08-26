@@ -9,10 +9,6 @@
 
 ## bilibili
 
-tags:
-- `AV` 或者 `BV` id
-- `分P号`
-
 例子:
 ```
 {{< bilibili (av号或BV号) >}}
