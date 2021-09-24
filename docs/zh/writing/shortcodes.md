@@ -27,7 +27,7 @@
 - [本地视频](#shortcode-local-video)
 - [YouTube](#shortcode-youtube)
 
-#### 如何使用 `shortcode`？
+### 如何使用 `shortcode`？
 
 1. 在您的 Markdown 文章中使用如下格式的短码调用, 其内容将被 Hugo 识别为`shortcode`
 
@@ -37,7 +37,7 @@
 
 2. 在您的站点根目录下新建`./layouts/shortcodes/yourShortcodeName.html`，编写这个文件
 
-   此时，您在此`.html`中编辑的语法内容将被 Markdown 容器接受并被 Hugo kernel 渲染输出体现在您的调试网页上。
+   此时，您在此`.html`中编辑的语法内容将被 Markdown 解析器接受并被 Hugo 渲染输出体现在您的调试网页上。
 
    若您暂时不知道该写点什么，不必担心，[Stack 默认提供了几种可靠的短码调用策略](#overview)。它们[默认存储](https://gohugo.io/templates/shortcode-templates/#file-location)在`./themes/hugo-theme-stack/layouts/shortcodes`中，根据 Hugo 模板调用的优先顺序，当您的根目录下的 `./layourts/shortcodes/`并不存在有效同名项目时，Stack 提供的默认策略将生效。
 
@@ -45,9 +45,9 @@
 
 例如指定 `./layouts/shortcodes/youtube.html`，那么合适的调用格式是 `\{\{< youtube >}}`，后面的`[params]`则根据具体的`shortcode`接口内容而定。
 
-#### 如何使用本主题提供的`demo-shortcode`？
+### 如何使用本主题提供的`demo-shortcode`？
 
-例如实现业内插入 Youtube 来源视频，假设如下 Markdown 内容为您的一篇**博客正文**，若您正处于 `hugo server` 本地调试模式，可直接复制挪用。
+例如实现页内插入 Youtube 视频，假设如下 Markdown 内容为您的一篇**博客正文**，若您正处于 `hugo server` 本地调试模式，可直接复制挪用。
 
 ```markdown
 > 这是写在你的 Markdown 正文中的内容哟~
@@ -185,4 +185,3 @@
 <!-- Other option -->
 {{< youtube id="jflq6vNcZyA" autoplay="true" >}}
 ```
-
