@@ -1,7 +1,5 @@
 # Shortcodes
 
-~~最后更新在 `v3.2.0`.~~
-
 ## WHAT Shortcode
 
 > [What a Shortcode is](https://gohugo.io/content-management/shortcodes/#what-a-shortcode-is)
