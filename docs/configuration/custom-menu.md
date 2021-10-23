@@ -1,15 +1,19 @@
 # Custom Menu
 
-## First Method (Recommended)
+::: warning
+The old way to set the menu icon (using `pre` field) is now deprecated. It still works but will be removed in the future. Please migrate to the new method (using `params.icon` field).
+:::
 
+## First Method (Recommended)
 If the menu item you'd like to add is a page, add `menu` field to its Front Matter:
 
 ```yaml
 menu: 
     main:
         name: title (optional)
-        pre: icon
         weight: -90
+        params:
+            icon: icon-name
 ```
 
 ## Second Method
@@ -23,16 +27,20 @@ menu:
           name: Home
           url: /
           weight: -100
-          pre: home
+          params:
+            icon: home
+            newTab: true
 ```
 
 * `identifier`: Item ID
 * `name`: Display text
 * `url`: Link
 * `weight`: Priority of the item, lower value means higher priority.
-* `pre`: Specify which SVG icon should be used
+* `params`: 
+  * `icon`: Specify which SVG icon should be used
+  * `newTab`: Open this link in new tab
 
-If `pre` is set to `archive`, theme will look for `archive.svg` under `assets/icons` folder.
+If `params.icon` is set to `archive`, theme will look for `archive.svg` under `assets/icons` folder.
 
 ## Add custom icon
 
