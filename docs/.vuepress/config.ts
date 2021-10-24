@@ -92,6 +92,46 @@ export default defineUserConfig<DefaultThemeOptions>({
                     '/zh/faq/README.md'
                 ],
             },
+            '/ja/': {
+                selectLanguageName: '日本語',
+                selectLanguageText: '言語',
+                sidebar: [
+                    {
+                        text: "基础",
+                        children: [
+                            '/ja/README.md',
+                            '/ja/getting-started.md'
+                        ]
+                    },
+                    {
+                        text: "配置主题",
+                        children: [
+                            '/ja/configuration/README.md',
+                            '/ja/configuration/custom-menu.md',
+                            '/ja/configuration/cache-resources.md'
+                        ]
+                    },
+                    {
+                        text: "修改主题",
+                        children: [
+                            '/ja/modify-theme/README.md',
+                            '/ja/modify-theme/css-variables.md',
+                            '/ja/modify-theme/example-custom-font-family.md',
+                        ]
+                    },
+                    {
+                        text: "开始创作",
+                        children: [
+                            '/ja/writing/README.md',
+                            '/ja/writing/supported-front-matter-fields.md',
+                            '/ja/writing/shortcodes.md',
+                        ]
+                    },
+                    '/ja/taxonomy/README.md',
+                    '/ja/i18n/README.md',
+                    '/ja/faq/README.md'
+                ],
+            },
         },
     },
 
@@ -102,7 +142,10 @@ export default defineUserConfig<DefaultThemeOptions>({
         '/zh/': {
             lang: 'zh-CN',
             title: 'Hugo 主题 Stack',
-
+        },
+        '/ja/': {
+            lang: 'ja-JP',
+            title: 'Hugo theme Stack',
         },
     },
     alias: {
@@ -119,6 +162,9 @@ export default defineUserConfig<DefaultThemeOptions>({
                     },
                     '/zh/': {
                         placeholder: '搜索',
+                    },
+                    '/ja/': {
+                        placeholder: 'サーチ',
                     },
                 },
             },
