@@ -1,49 +1,41 @@
-# Getting Started
+# 始めるには
 
-## Requirements
+## 要件
 
-This theme uses SCSS and TypeScript. For that reason, it's necessary to use **Hugo ≥ 0.78.0**.
+このテーマは `SCSS` と `TypeScript` を使用しており。なので **Hugo Extended ≥ 0.78.0** を使用してください。
 
-Use **Hugo Extended** version if you want to:
+## インストール
 
-* Use the latest feature/fix from `master` branch
-* Edit SCSS files
+このテーマの最新リリースは: [Releases](https://github.com/CaiJimmy/hugo-theme-stack/releases)
 
-_\(It's recommended to use Extended version\)_
+もし最新機能を使いたいならば、**Git** \(おすすめ\) を使用してください。
 
-**Compiled CSS are updated once per release.**
-
-## Installation
-
-The last release of this theme can be found on this page: [Releases](https://github.com/CaiJimmy/hugo-theme-stack/releases)
-
-If you want to try out the latest feature, you can download the theme executing the next Git clone command on your Hugo site folder.
-
-You can also download this theme **using Git** \(recommended\), execute the following command under your Hugo site folder:
+これらのコマンドをHugoサイトフォルダー で実行してください。
 
 ```bash
 git clone https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 ```
 
 ::: tip
-If you are using Git to manage your Hugo site, add this theme as a submodule.
+Gitを使用してHugoサイトを管理している場合は、このテーマをサブモジュールとして追加します。 
 :::
 
 ```bash
 git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 ```
 
-If it's your first time using this theme, take a look at `exampleSite` folder, which includes an example `config.yaml` with all available parameters.
+このテーマを初めて使用する場合は、使用可能なすべてのパラメーターを含むサンプルの `config.yaml`が含まれている` exampleSite`フォルダーを確認してください。 
+
+
+Hugoを初めて使用する場合は、 `exampleSite`のコンテンツをHugoサイトフォルダにコピーすることをお勧めします。 \(_投稿例のセットが含まれています。_\)
 
 ::: warning
 Remove `config.toml` from your site folder.
 :::
 
-In case this is your first time using Hugo, I recommend you copy the content of `exampleSite` to your Hugo site folder. \(_It includes a set of example posts._\)
+Demoは、`exampleSite`に含まれるコンテンツを使用して構築されています: [https://theme-stack.jimmycai.com/](https://theme-stack.jimmycai.com/)
 
-The demo site is built using content included in `exampleSite`: [https://theme-stack.jimmycai.com/](https://theme-stack.jimmycai.com/)
+ターミナルで `hugo server` を実行します。 `http://localhost:1313` プレビューできます
 
-Once you've done that, execute `hugo server` in your terminal. You should be able to visualize the theme on `http://localhost:1313`.
-
-> _For more information about Hugo's functionality, check_ [_official documentation of Hugo_](https://gohugo.io/documentation/)_._
+> _Hugoの機能の詳細については、以下を確認してください。_ [_Hugoの公式ドキュメント_](https://gohugo.io/documentation/)_._
 
