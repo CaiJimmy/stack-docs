@@ -4,7 +4,7 @@ If your site has a large number of images, it could take a long time to generate
 
 To accelerate the build process, you can cache the `resources` folder under your Hugo site folder.
 
-The official Hugo documentation recomends to include the `resources` folder in version control system: [Image Processing Performance Consideration](https://gohugo.io/content-management/image-processing/#image-processing-performance-consideration)
+The official Hugo documentation recommends to include the `resources` folder in version control system: [Image Processing Performance Consideration](https://gohugo.io/content-management/image-processing/#image-processing-performance-consideration)
 
 Or, if you are using services like Netlify, there are probably plugins that allows you to cache a specific folder. 
 

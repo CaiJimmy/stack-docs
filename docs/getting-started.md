@@ -1,6 +1,8 @@
-# Getting Started
+# Installation
 
 ## Requirements
+
+### General
 
 This theme uses SCSS and TypeScript. For that reason, it's necessary to use **Hugo ≥ 0.78.0**.
 
@@ -13,7 +15,12 @@ _\(It's recommended to use Extended version\)_
 
 **Compiled CSS are updated once per release.**
 
-## Installation
+### Only when using theme as Hugo module:
+
+* **Go version >= 1.12**, download Go installer [here](https://go.dev/dl/)
+* **Git**, download Git installer [here](https://git-scm.com/downloads)
+
+## Route 1 (traditional): install theme locally
 
 The last release of this theme can be found on this page: [Releases](https://github.com/CaiJimmy/hugo-theme-stack/releases)
 
@@ -32,6 +39,31 @@ If you are using Git to manage your Hugo site, add this theme as a submodule.
 ```bash
 git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 ```
+
+## Route 2 (recommended): use theme as Hugo module
+
+- Turn your new site into a Hugo module:
+```bash
+hugo mod init github.com/me/my-new-blog
+```
+
+- Declare the `hugo-theme-stack` module as a dependency of your site:
+```bash
+hugo mod get github.com/CaiJimmy/hugo-theme-stack
+```
+
+- Add the following lines at the end of your `config.yaml`:
+
+```yaml
+module:
+  # uncomment line below for temporary local development of module
+  # replacements: "github.com/CaiJimmy/hugo-theme-stack -> ../../hugo-theme-stack"
+  imports:
+    - path: github.com/CaiJimmy/hugo-theme-stack
+      disable: false
+```
+
+## Configuration and site startup
 
 If it's your first time using this theme, take a look at `exampleSite` folder, which includes an example `config.yaml` with all available parameters.
 
