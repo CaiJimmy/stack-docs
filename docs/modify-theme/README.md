@@ -20,4 +20,4 @@ You can modify this theme's stylesheet using the same method. Stylesheets file \
 
 Before you do that, **check CSS variables** used by this theme. It's easier changing value of those variables, and less intrusive.
 
-[CSS Varibles](./css-variables.md)
+[CSS Variables](./css-variables.md)
