@@ -85,6 +85,8 @@ Comment system provider. Available options:
 * `disqus`
   * It's necessary to set `disqusShortname` field in `config.toml`. Official documentation: [Configure Disqus](https://gohugo.io/content-management/comments/#configure-disqus)
 * `utterances`
+  * `utterances` uses Github issues to associate comment and the page, therefore should use an *open* repository and [install `utterances` app](https://github.com/apps/utterances)
+  * copy you repository name and label to the config file.
 * `remark42`
 
 ::: tip
