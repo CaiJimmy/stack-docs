@@ -49,7 +49,7 @@ hugo mod init github.com/me/my-new-blog
 
 - Declare the `hugo-theme-stack` module as a dependency of your site:
 ```bash
-hugo mod get github.com/CaiJimmy/hugo-theme-stack
+hugo mod get github.com/CaiJimmy/hugo-theme-stack/v3
 ```
 
 - Add the following lines at the end of your `config.yaml`:
@@ -57,9 +57,9 @@ hugo mod get github.com/CaiJimmy/hugo-theme-stack
 ```yaml
 module:
   # uncomment line below for temporary local development of module
-  # replacements: "github.com/CaiJimmy/hugo-theme-stack -> ../../hugo-theme-stack"
+  # replacements: "github.com/CaiJimmy/hugo-theme-stack/v3 -> ../../hugo-theme-stack"
   imports:
-    - path: github.com/CaiJimmy/hugo-theme-stack
+    - path: github.com/CaiJimmy/hugo-theme-stack/v3
       disable: false
 ```
 
