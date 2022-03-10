@@ -27,7 +27,7 @@ choco install hugo-extended
 
 ## 下载主题
 
-可以在 GitHub 仓库的 [Release](https://github.com/CaiJimmy/hugo-theme-stack/releases) 页面找到最新的稳定版。 下载后把 `hugo-theme-stack-master` 改名为 `hugo-theme-stack` 并放到站点目录的 `theme` 文件夹下。
+可以在 GitHub 仓库的 [Release](https://github.com/CaiJimmy/hugo-theme-stack/releases) 页面找到最新的稳定版。 下载后把 `hugo-theme-stack-master` 改名为 `hugo-theme-stack` 并放到站点目录的 `themes` 文件夹下。
 
 也可以使用 Git 命令来下载主题的最新版本。在 Hugo 站点目录下执行：
 
