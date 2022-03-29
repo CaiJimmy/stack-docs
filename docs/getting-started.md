@@ -73,7 +73,7 @@ Remove `config.toml` from your site folder.
 
 In case this is your first time using Hugo, I recommend you copy the content of `exampleSite` to your Hugo site folder. \(_It includes a set of example posts._\)
 
-The demo site is built using content included in `exampleSite`: [https://theme-stack.jimmycai.com/](https://theme-stack.jimmycai.com/)
+The demo site is built using content included in `exampleSite`: [https://demo.stack.jimmycai.com/](https://demo.stack.jimmycai.com/)
 
 Once you've done that, execute `hugo server` in your terminal. You should be able to visualize the theme on `http://localhost:1313`.
 
