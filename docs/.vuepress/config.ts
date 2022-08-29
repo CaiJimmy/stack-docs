@@ -1,127 +1,120 @@
-import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions } from 'vuepress'
-import path from 'path'
+import { defineUserConfig } from "vuepress";
+import { defaultTheme } from "vuepress";
+import { searchPlugin } from "@vuepress/plugin-search";
+import path from "path";
 
-export default defineUserConfig<DefaultThemeOptions>({
-    lang: 'en-US',
-    title: 'Hugo theme Stack',
-    description: 'Card-style Hugo theme designed for bloggers',
+export default defineUserConfig({
+    lang: "en-US",
+    title: "Hugo theme Stack",
+    description: "Card-style Hugo theme designed for bloggers",
 
-    themeConfig: {
-        repo: 'CaiJimmy/hugo-theme-stack',
-        docsRepo: 'CaiJimmy/stack-docs',
-        editLinks: true,
-        docsBranch: 'master',
-        docsDir: 'docs',
+    theme: defaultTheme({
+        repo: "CaiJimmy/hugo-theme-stack",
+        docsRepo: "CaiJimmy/stack-docs",
+        docsBranch: "master",
+        docsDir: "docs",
+        editLink: true,
         locales: {
-            '/': {
-                selectLanguageName: 'English',
+            "/": {
+                selectLanguageName: "English",
                 sidebar: [
                     {
                         text: "Introduction",
-                        children: [
-                            '/README.md',
-                            '/getting-started.md'
-                        ]
+                        children: ["/README.md", "/getting-started.md"],
                     },
                     {
                         text: "Configuration",
                         children: [
-                            '/configuration/README.md',
-                            '/configuration/custom-menu.md',
-                            '/configuration/cache-resources.md'
-                        ]
+                            "/configuration/README.md",
+                            "/configuration/custom-menu.md",
+                            "/configuration/cache-resources.md",
+                        ],
                     },
                     {
                         text: "Modify theme",
                         children: [
-                            '/modify-theme/README.md',
-                            '/modify-theme/css-variables.md',
-                            '/modify-theme/example-custom-font-family.md',
-                        ]
+                            "/modify-theme/README.md",
+                            "/modify-theme/css-variables.md",
+                            "/modify-theme/example-custom-font-family.md",
+                        ],
                     },
                     {
                         text: "Writing",
                         children: [
-                            '/writing/README.md',
-                            '/writing/supported-front-matter-fields.md',
-                        ]
+                            "/writing/README.md",
+                            "/writing/supported-front-matter-fields.md",
+                        ],
                     },
-                    '/taxonomy/README.md',
-                    '/i18n/README.md',
-                    '/faq/README.md'
+                    "/taxonomy/README.md",
+                    "/i18n/README.md",
+                    "/faq/README.md",
                 ],
             },
-            '/zh/': {
-                selectLanguageName: '简体中文',
-                selectLanguageText: '语言',
+            "/zh/": {
+                selectLanguageName: "简体中文",
+                selectLanguageText: "语言",
                 sidebar: [
                     {
                         text: "基础",
-                        children: [
-                            '/zh/README.md',
-                            '/zh/getting-started.md'
-                        ]
+                        children: ["/zh/README.md", "/zh/getting-started.md"],
                     },
                     {
                         text: "配置主题",
                         children: [
-                            '/zh/configuration/README.md',
-                            '/zh/configuration/custom-menu.md',
-                            '/zh/configuration/cache-resources.md'
-                        ]
+                            "/zh/configuration/README.md",
+                            "/zh/configuration/custom-menu.md",
+                            "/zh/configuration/cache-resources.md",
+                        ],
                     },
                     {
                         text: "修改主题",
                         children: [
-                            '/zh/modify-theme/README.md',
-                            '/zh/modify-theme/css-variables.md',
-                            '/zh/modify-theme/example-custom-font-family.md',
-                        ]
+                            "/zh/modify-theme/README.md",
+                            "/zh/modify-theme/css-variables.md",
+                            "/zh/modify-theme/example-custom-font-family.md",
+                        ],
                     },
                     {
                         text: "开始创作",
                         children: [
-                            '/zh/writing/README.md',
-                            '/zh/writing/supported-front-matter-fields.md',
-                            '/zh/writing/shortcodes.md',
-                        ]
+                            "/zh/writing/README.md",
+                            "/zh/writing/supported-front-matter-fields.md",
+                            "/zh/writing/shortcodes.md",
+                        ],
                     },
-                    '/zh/taxonomy/README.md',
-                    '/zh/i18n/README.md',
-                    '/zh/faq/README.md'
+                    "/zh/taxonomy/README.md",
+                    "/zh/i18n/README.md",
+                    "/zh/faq/README.md",
                 ],
             },
         },
-    },
+    }),
 
     locales: {
-        '/': {
-            lang: 'en-US',
+        "/": {
+            lang: "en-US",
         },
-        '/zh/': {
-            lang: 'zh-CN',
-            title: 'Hugo 主题 Stack',
-
+        "/zh/": {
+            lang: "zh-CN",
+            title: "Hugo 主题 Stack",
         },
     },
     alias: {
-        '@assets': path.resolve(__dirname, '../assets')
+        "@assets": path.resolve(__dirname, "../assets"),
     },
 
     plugins: [
         [
-            '@vuepress/plugin-search',
-            {
+            searchPlugin({
                 locales: {
-                    '/': {
-                        placeholder: 'Search',
+                    "/": {
+                        placeholder: "Search",
                     },
-                    '/zh/': {
-                        placeholder: '搜索',
+                    "/zh/": {
+                        placeholder: "搜索",
                     },
                 },
-            },
+            }),
         ],
-    ]
-})
+    ],
+});
