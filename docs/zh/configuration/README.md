@@ -21,7 +21,7 @@ Hugo 的配置存放在站点根目录的 `config.yaml` 里（其实也可以使
 RSS 输出文章完整内容
 
 ### `favicon`
-站点的图标
+站点的图标。  注意在圖檔路徑前必須添加"/"否則會造成除了主頁以外的頁面無法顯示，例如`/img/favicon.png`
 
 <!-- footer
 ## footer
