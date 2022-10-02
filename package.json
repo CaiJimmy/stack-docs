@@ -1,16 +1,25 @@
 {
     "name": "stack-docs",
     "version": "1.0.0",
+    "description": "",
     "main": "index.js",
     "scripts": {
-        "docs:dev": "vuepress dev docs",
-        "docs:build": "vuepress build docs"
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:serve": "vitepress serve docs"
     },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
     "devDependencies": {
-        "typescript": "^4.5.4",
-        "vuepress": "^2.0.0-beta.33"
+        "vitepress": "1.0.0-alpha.18",
+        "vue": "^3.2.40"
     },
-    "dependencies": {
-        "@vuepress/plugin-search": "^2.0.0-beta.33"
+    "pnpm": {
+        "peerDependencyRules": {
+            "ignoreMissing": [
+                "@algolia/client-search"
+            ]
+        }
     }
 }

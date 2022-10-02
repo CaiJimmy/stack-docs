@@ -1,27 +1,15 @@
 # Stack Docs
 
-This is the source for the [Stack Docs](https://docs.stack.jimmycai.com/) website.
-
-## Development
-
-Installing dependencies:
+Documentation for the Hugo Theme Stack. Powered by VitePress.
 
 ```bash
-npm install
+pnpm install
+pnpm run docs:dev
+pnpm run docs:build
 ```
 
-Running the development server:
+## License
 
-```bash
-npm run docs:dev
-```
+Documentation is licensed under the MIT License.
 
-> Note: for some unknown reason, during development, modifying the config file, `docs/.vuepress/config.ts`, does not reflect the change in real time. It's necessary to restart the server.
-
-## Build
-
-Building the website:
-
-```bash
-npm run docs:build
-```
+Logo designed by Jimmy Cai, all rights reserved.
