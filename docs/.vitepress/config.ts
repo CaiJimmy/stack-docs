@@ -52,7 +52,12 @@ export default defineConfig({
             text: 'Edit this page on GitHub'
         },
 
-        outline: [2, 3]
+        outline: [2, 3],
+
+        carbonAds: {
+            code: 'CEAIE27W',
+            placement: 'stackjimmycaicom'
+        }
     },
 });
 
