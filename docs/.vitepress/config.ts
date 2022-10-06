@@ -57,6 +57,12 @@ export default defineConfig({
         carbonAds: {
             code: 'CEAIE27W',
             placement: 'stackjimmycaicom'
+        },
+
+        algolia: {
+            appId: '6OC1XCG4R5',
+            apiKey: '7779946cc768ec3699123e60a91d0ddc',
+            indexName: 'stack-jimmycai',
         }
     },
 });
