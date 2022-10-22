@@ -9,7 +9,10 @@ declare global {
 export default {
     ...DefaultTheme,
     enhanceApp({ router }) {
+        const oldOnAfterRouteChanged = router.onAfterRouteChanged;
+
         router.onAfterRouteChanged = () => {
+            oldOnAfterRouteChanged && oldOnAfterRouteChanged();
             if (typeof window._carbonads !== 'undefined')
                 window._carbonads.refresh();
         }
