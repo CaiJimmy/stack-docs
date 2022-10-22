@@ -85,7 +85,8 @@ function sidebarGuide() {
                 { text: 'Markdown', link: '/writing/markdown' },
                 {
                     text: 'Frontmatter Configs', link: '/writing/frontmatter'
-                }
+                },
+                { text: 'Shortcodes', link: '/writing/shortcodes' },
             ]
         },
         {
