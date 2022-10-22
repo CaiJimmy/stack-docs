@@ -58,3 +58,16 @@ TOC will be shown only if the page has at least one heading.
 Additional CSS styles for taxonomy term badge that appears in article page.
 
 Currently only `background` (background of the badge) and `color` (text color) are supported.
+
+## keywords
+
+* Type: `[]string`
+
+Keywords of the page. Useful for SEO.
+
+## redingTime
+
+* Type: `bool`
+* Default: `.Site.Params.Article.ReadingTime`
+
+Show / hide reading time of the page.
