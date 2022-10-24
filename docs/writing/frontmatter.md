@@ -65,7 +65,7 @@ Currently only `background` (background of the badge) and `color` (text color) a
 
 Keywords of the page. Useful for SEO.
 
-## redingTime
+## readingTime
 
 * Type: `bool`
 * Default: `.Site.Params.Article.ReadingTime`
