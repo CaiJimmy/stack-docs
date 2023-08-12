@@ -46,7 +46,7 @@ Then, you can insert the gallery in your content like this:
 ```markdown
 --- content/gallery/my-first-gallery/index.md ---
 ![Image 1](image1.png) ![Image 2](image2.png)
-![Image 1](image3.png)
+![Image 3](image3.png)
 ```
 
 Which will render in two rows, with two images in the first row and one image in the second row.
