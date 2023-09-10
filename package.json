@@ -8,12 +8,13 @@
         "docs:build": "vitepress build docs",
         "docs:serve": "vitepress serve docs"
     },
+    "type": "module",
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "vitepress": "1.0.0-alpha.22",
-        "vue": "^3.2.41"
+        "vitepress": "1.0.0-rc.12",
+        "vue": "^3.3.4"
     },
     "pnpm": {
         "peerDependencyRules": {

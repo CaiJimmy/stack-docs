@@ -22,7 +22,7 @@ export default defineConfig({
         theme: 'one-dark-pro'
     },
 
-    cleanUrls: 'with-subfolders',
+    cleanUrls: true,
 
     themeConfig: {
         logo: '/logo.png',
