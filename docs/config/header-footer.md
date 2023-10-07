@@ -18,7 +18,7 @@ Create `layouts/partials/head/custom.html` under your Hugo site folder, with fol
 
 ```html
 <style>
-	/// Overwrite CSS variable
+    /* Overwrite CSS variable */
     :root {
         --article-font-family: "Merriweather", var(--base-font-family);
     }
