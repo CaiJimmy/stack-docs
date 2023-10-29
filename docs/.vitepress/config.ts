@@ -22,6 +22,8 @@ export default defineConfig({
         theme: 'one-dark-pro'
     },
 
+    cleanUrls: true,
+
     themeConfig: {
         logo: '/logo.png',
 
