@@ -8,7 +8,7 @@ Fields under `[Params.Article]`.
 
 - Type: `bool`
 
-Enable math support by [KaTeX](https://katex.org/). Can be overridden by front matter field `toc`.
+Enable math support by [KaTeX](https://katex.org/). Can be overridden by front matter field `math`.
 
 ## toc
 
