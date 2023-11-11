@@ -7,7 +7,7 @@ There are two empty files reserved for custom HTML in the theme, useful for addi
 
 To overwrite them:
 
-1. Create `layout/partials/footer/custom.html` under your Hugo site folder
+1. Create `layouts/partials/footer/custom.html` under your Hugo site folder
 2. Insert custom code in that file.
 
 ## Example: Custom font family for article content
