@@ -62,6 +62,6 @@ If `params.icon` is set to `archive`, theme will look for `archive.svg` under `a
 
 ## Add custom icon
 
-This theme comes with some SVG icons from [Tabler Icons](https://tablericons.com). You can find them under theme folder `assets/icons`.
+This theme comes with some SVG icons from [Tabler Icons](https://tabler-icons.com). You can find them under theme folder `assets/icons`.
 
 To include more icons, just download them from website above, and place them under `assets/icons` folder of your Hugo site.
