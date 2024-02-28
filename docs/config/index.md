@@ -1,6 +1,6 @@
 # Introduction
 
-Hugo acepts `TOML`, `YAML` and `JSON` as configuration formats. This theme currently uses `YAML` and `TOML` as configuration formats. 
+Hugo accepts `TOML`, `YAML` and `JSON` as configuration formats. This theme currently uses `YAML` and `TOML` as configuration formats. 
 
 ::: info
 In the foreseeable future, this theme will migrate all its configurations to `TOML` format. 
