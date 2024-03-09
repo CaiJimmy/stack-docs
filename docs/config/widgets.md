@@ -14,7 +14,7 @@ Display a list of years with the number of posts published in each year.
 
 You need to create a page with `layout: archives` previously.
 
-#### Paramters
+#### Parameters
 
 - `limit`: Number of years to display. Default: `10`.
 
