@@ -37,4 +37,4 @@ Output page's full content in RSS.
 
 Site favicon path. 
 
-For example, if you want to use the favicon in `static/favicon.ico`, set `favicon` to `/favicon.ico`.
+For example, if you want to use the favicon in `static/favicon.ico`, set `favicon` to `favicon.ico`.
