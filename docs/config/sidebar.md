@@ -29,7 +29,7 @@ Subtitle displayed below the site title.
 
 Configurations related with avatar.
 
-### avatar.enable
+### avatar.enabled
 
 - Type: `bool`
 - Default: `true`
