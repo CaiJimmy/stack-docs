@@ -4,7 +4,7 @@ Widgets are placed at right sidebar of the blog. They are used to display some i
 
 You can configure which widgets to display and their order in the homepage and post page.
 
-`widget.homepage` and `widget.page` are arrays of maps. Each map contains two keys: `type` and `params`. `type` is the name of the widget. `params` is the configuration of the widget.
+`widgets.homepage` and `widgets.page` are arrays of maps. Each map contains two keys: `type` and `params`. `type` is the name of the widget. `params` is the configuration of the widget.
 
 ## Available widgets
 
