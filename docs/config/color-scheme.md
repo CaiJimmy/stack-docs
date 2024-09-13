@@ -2,6 +2,7 @@
 
 Light and dark color schemes are available in this theme. 
 
+Fields are under `[Params.colorScheme]` section.
 
 ## toggle
 
