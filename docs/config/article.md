@@ -4,6 +4,13 @@ Configuration for the article page.
 
 Fields under `[Params.Article]`.
 
+## headingAnchor
+
+- Type: `bool`
+- Default: `false`
+
+Enable # anchor links next to headings, visible only when hovered over.
+
 ## math
 
 - Type: `bool`
