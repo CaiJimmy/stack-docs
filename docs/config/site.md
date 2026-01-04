@@ -13,7 +13,7 @@ Site description. By default, it falls back to `.Params.Sidebar.Subtitle`.
 - Type: `[string]`
 - Default: `["post"]`
 
-Pages places under this/those sections will be shown on homepage and archive page.
+Pages placed under this/those sections will be shown on homepage and archive page.
 
 For more information, take a look at Hugo's documentation on [Content Sections](https://gohugo.io/content-management/sections/).
 
