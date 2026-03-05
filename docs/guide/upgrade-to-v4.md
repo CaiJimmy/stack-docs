@@ -1,8 +1,8 @@
-# Upgrade Guide
+# Upgrade to v4
 
-## Upgrade to v4
+For further details, refer to the [Release Notes](https://github.com/CaiJimmy/hugo-theme-stack/releases) and compare your configuration against the new `demo` folder or [starter template](https://github.com/CaiJimmy/hugo-theme-stack-starter).
 
-### Minimum Hugo Version
+## Minimum Hugo Version
 
 The minimum required Hugo version has been bumped to **v0.157.0**. You must update your Hugo installation before running the v4 theme.
 
@@ -10,7 +10,9 @@ I recommend always using the latest stable version of Hugo, because when fixing 
 
 In case of [starter template](https://github.com/CaiJimmy/hugo-theme-stack-starter), it has now been configured to use always the latest stable version of Hugo.
 
-### Configuration Format
+## Changes
+
+### YAML to TOML
 
 The theme configuration and i18n files have migrated from YAML to **TOML**.
 
@@ -20,20 +22,7 @@ The theme configuration and i18n files have migrated from YAML to **TOML**.
 - As a user, you are not required to use this configuration format. You can keep using a single `hugo.toml` file.
 - Language files in the `i18n` folder (e.g., `en.yaml`) are now in TOML format too. If you are overriding some of them, then you should convert them to TOML as well.
 
-### Page Visibility (Hidden)
-
-The `hidden` front matter parameter, previously used to hide pages from lists, has been removed. It is replaced by Hugo's native `_build.list` option.
-
-To hide a page, set its front matter to:
-
-```yaml
----
-_build:
-    list: "local"
----
-```
-
-## i18n
+### i18n
 
 Now dates are displayed in localized format based on current site language. Check the demo to see the difference.
 
@@ -47,6 +36,27 @@ See https://gohugo.io/functions/time/format/#localization for more information.
 
 Because this would only work if the language code matches with the one from [gohugoio/locales](https://github.com/gohugoio/locales) package, I had to rename `zh-cn` to `zh`. If you are using `zh-cn` as the key in `i18n` or `defaultContentLanguage`, you should change it to `zh`.
 
+### Images
+
+- **Vibrant.js has been removed**: The theme no longer automatically extracts dominant colors from post images via Vibrant.js but via Hugo's native image processing.
+- **Image Processing**: `[imageProcessing.cover]` has been renamed to `[imageProcessing.thumbnail]`.
+- **External images**: In v3, external images in article content could not be displayed with lightbox and gallery style. This has been fixed now.
+- **Lightbox**: Photoswipe has been updated to the latest version (v5).
+
+### Favicon and avatar
+
+- **Favicon**: The favicon is now located within the `assets` folder instead of `static/`.
+- **Avatar**: The `local` boolean flag under `[sidebar]` avatar configuration has been removed. Simply provide the path or URL.
+
+```toml
+favicon = "img/favicon.png" # --> assets/img/favicon.png
+
+[sidebar]
+    avatar = "img/avatar.png" # --> assets/img/avatar.png
+```
+
+## New features
+
 ### Custom sorting order
 
 Now it's possible to sort post by `lastmod` (having the last modified post at the top).
@@ -58,13 +68,6 @@ Now it's possible to sort post by `lastmod` (having the last modified post at th
 SortBy             = "default"
 ```
 
-### Images
-
-- **Vibrant.js has been removed**: The theme no longer automatically extracts dominant colors from post images via Vibrant.js but via Hugo's native image processing.
-- **Image Processing**: `[imageProcessing.cover]` has been renamed to `[imageProcessing.thumbnail]`.
-- **External images**: In v3, external images in article content could not be displayed with lightbox and gallery style. This has been fixed now.
-- **Lightbox**: Photoswipe has been updated to the latest version (v5).
-
 ### Widgets
 
 A new generic `taxonomy` widget has been introduced, which allows you to display taxonomies other than categories and tags. The original `categories` and `tags` widgets are still available.
@@ -74,22 +77,6 @@ A new generic `taxonomy` widget has been introduced, which allows you to display
     homepage = [
         { type = "taxonomy", params = { taxonomy = "customTaxonomy", limit = 5, icon = "tag" } },
     ]
-```
-
-### Sidebar Menu Icons
-
-The sidebar custom menus no longer support the `.Pre` parameter for icons. You will need to reconfigure or remove custom icons defined via `.Pre` in your menu configuration.
-
-### Sidebar Favicon and Avatar
-
-- **Favicon**: The favicon is now located within the `assets` folder instead of `static/`.
-- **Avatar**: The `local` boolean flag under `[sidebar]` avatar configuration has been removed. Simply provide the path or URL.
-
-```toml
-favicon = "img/favicon.png" # --> assets/img/favicon.png
-
-[sidebar]
-    avatar = "img/avatar.png" # --> assets/img/avatar.png
 ```
 
 ### Mermaid Diagrams
@@ -143,6 +130,22 @@ Added natively support for [Comentario](https://comentario.app/) comment server 
 
 Added a new GDPR-compliant cookie consent banner under the `[cookies]` configuration block to conditionally load analytics and functional cookies.
 
----
+## Dropped features
 
-For further details, refer to the [Release Notes](https://github.com/CaiJimmy/hugo-theme-stack/releases) and compare your configuration against the new `exampleSite`.
+### Page Visibility (Hidden)
+
+The `hidden` front matter parameter, previously used to hide pages from lists, has been removed. It is replaced by Hugo's native `_build.list` option.
+
+To hide a page, set its front matter to:
+
+```yaml
+---
+_build:
+    list: "local"
+---
+```
+
+## Sidebar Menu Icons
+
+The sidebar custom menus no longer support the `.Pre` parameter for icons. You will need to reconfigure or remove custom icons defined via `.Pre` in your menu configuration.
+
