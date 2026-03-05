@@ -2,7 +2,7 @@
 
 文章页面的配置。
 
-`[Params.Article]` 下的字段。
+`[Params.article]` 下的字段。
 
 ## headingAnchor
 

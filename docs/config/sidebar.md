@@ -2,7 +2,7 @@
 
 Settings related with left-side sidebar.
 
-Fields are under `[sidebar]` section.
+Fields are under `[Params.sidebar]` section.
 
 ## compact
 

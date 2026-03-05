@@ -6,7 +6,7 @@ Depending on how you installed the theme, it might be harder or easier to modify
 
 Using this method, there won't be any file under `themes` directory. In order to modify the theme, you will have to copy the file you want to modify to the same directory under `layouts` directory.
 
-For example, in order to modify the `themes/hugo-theme-stack/layouts/partials/head/custom.html` file, you will have to copy it to `layouts/partials/head/custom.html` and modify it there (copy the code from theme's repository). 
+For example, in order to modify the `themes/hugo-theme-stack/layouts/_partials/head/custom.html` file, you will have to copy it to `layouts/_partials/head/custom.html` and modify it there (copy the code from theme's repository). 
 The same applies to `assets` and `static` directories.
 
 ## Git submodule

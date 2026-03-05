@@ -2,7 +2,7 @@
 
 The footer is the last section of the page. It is usually used to display the copyright information.
 
-Fields under `[Params.Footer]`.
+Fields under `[Params.footer]`.
 
 ## since
 

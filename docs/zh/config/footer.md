@@ -2,7 +2,7 @@
 
 页脚是页面的最后一个部分。它通常用于显示版权信息。
 
-`[Params.Footer]` 下的字段。
+`[Params.footer]` 下的字段。
 
 ## since
 

@@ -6,7 +6,7 @@
 
 - 类型：`string`
 
-站点描述。默认情况下，它会回退到 `.Params.Sidebar.Subtitle`。
+站点描述。默认情况下，它会回退到 `.Params.sidebar.subtitle`。
 
 ## mainSections
 

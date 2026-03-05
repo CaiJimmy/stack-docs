@@ -17,9 +17,9 @@ Stack currently supports the following comment systems:
 - [Vssue](https://vssue.js.org/)
 - [Waline](https://waline.js.org/)
 
-Each comment system has its own configuration options placed under `[Params.Comments.COMMENT_SYSTEM]` section. 
+Each comment system has its own configuration options placed under `[Params.comments.COMMENT_SYSTEM]` section. 
 
-For example, utterances's configuration options are placed under `[Params.Comments.utterances]` section.
+For example, utterances's configuration options are placed under `[Params.comments.utterances]` section.
 
 ::: tip
 A full list of supported configuration options can be found in the [configuration](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml)
@@ -28,7 +28,12 @@ For more information about the meaning of each configuration option, please refe
 :::
 
 ::: warning
-In case of Disqus, the only configuration option is `disqusShortname`, which is not available at `[Params.Comments.disqus]` section. Instead, it is placed at root section of configuration file.
+In case of Disqus, the only configuration option is `disqusShortname`, which is not available at `[Params.comments.disqus]` section. Instead, it is placed at the root section of your main Hugo configuration file (`hugo.toml`):
+
+```toml
+[services.disqus]
+    shortname = "hugo-theme-stack"
+```
 :::
 
 ## enabled

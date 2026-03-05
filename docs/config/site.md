@@ -6,7 +6,7 @@ Fields under `[Params]`:
 
 - Type: `string`
 
-Site description. By default, it falls back to `.Params.Sidebar.Subtitle`.
+Site description. By default, it falls back to `.Params.sidebar.subtitle`.
 
 ## mainSections
 

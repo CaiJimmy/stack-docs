@@ -17,9 +17,9 @@ Stack 目前支持以下评论系统：
 - [Vssue](https://vssue.js.org/)
 - [Waline](https://waline.js.org/)
 
-每个评论系统都有自己的配置选项，放置在 `[Params.Comments.COMMENT_SYSTEM]` 部分。
+每个评论系统都有自己的配置选项，放置在 `[Params.comments.COMMENT_SYSTEM]` 部分。
 
-例如，utterances 的配置选项放置在 `[Params.Comments.utterances]` 部分。
+例如，utterances 的配置选项放置在 `[Params.comments.utterances]` 部分。
 
 ::: tip
 完整的支持的配置选项列表可以在 [配置文件](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml) 中查阅。
@@ -28,7 +28,12 @@ Stack 目前支持以下评论系统：
 :::
 
 ::: warning
-对于 Disqus，唯一的配置选项是 `disqusShortname`，它不在 `[Params.Comments.disqus]` 部分中。相反，它被放置在配置文件的根部分。
+对于 Disqus，唯一的配置选项是 `disqusShortname`，它不在 `[Params.comments.disqus]` 部分中。相反，它应被放置在 Hugo 主配置文件的根部分（`hugo.toml`）：
+
+```toml
+[services.disqus]
+    shortname = "hugo-theme-stack"
+```
 :::
 
 ## enabled

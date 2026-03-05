@@ -1,6 +1,6 @@
 # Date format
 
-Fields under `[dateFormat]`.
+Fields under `[Params.dateFormat]`.
 
 Date format setting. Notice that Go's date format is slightly different than other programming language, take a look at official documentation: [dateFormat](https://gohugo.io/functions/dateformat/)
 

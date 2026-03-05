@@ -2,7 +2,7 @@
 
 Configuration for the article page.
 
-Fields under `[Params.Article]`.
+Fields under `[Params.article]`.
 
 ## headingAnchor
 

@@ -6,7 +6,7 @@
 
 使用此方法，`themes` 目录下不会有任何文件。为了修改主题，您需要将想要修改的文件复制到 `layouts` 目录下对应的目录中。
 
-例如，要修改 `themes/hugo-theme-stack/layouts/partials/head/custom.html` 文件，您需要将其复制到 `layouts/partials/head/custom.html` 并在那里进行修改（从主题仓库中复制原始代码）。
+例如，要修改 `themes/hugo-theme-stack/layouts/_partials/head/custom.html` 文件，您需要将其复制到 `layouts/_partials/head/custom.html` 并在那里进行修改（从主题仓库中复制原始代码）。
 这同样适用于 `assets` 和 `static` 目录。
 
 ## Git 子模块 (Git submodule)

@@ -2,7 +2,7 @@
 
 与左侧侧边栏相关的设置。
 
-字段位于 `[sidebar]` 部分。
+字段位于 `[Params.sidebar]` 部分。
 
 ## compact
 
