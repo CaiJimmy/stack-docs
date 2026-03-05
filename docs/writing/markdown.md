@@ -13,10 +13,8 @@ content
 
 This is the recommended way to organize your content. You can read more about page bundles in [Hugo's documentation](https://gohugo.io/content-management/page-bundles/).
 
-::: warning
-Inserting external images is supported, but **it is not recommended**. 
-
-Features like image gallery and image zooming will not work with external images. Those feature needs to know the image's dimensions, which is not possible with external images.
+::: info
+Inserting external images is fully supported. Features like image gallery and image zooming will automatically work with external images as well.
 :::
 
 With above organization, you can insert images in your content like this:
