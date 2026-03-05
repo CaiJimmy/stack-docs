@@ -4,7 +4,7 @@ For further details, refer to the [Release Notes](https://github.com/CaiJimmy/hu
 
 ## Minimum Hugo Version
 
-The minimum required Hugo version has been bumped to **v0.157.0**. You must update your Hugo installation before running the v4 theme.
+The minimum required Hugo version has been bumped to **v0.157.0**.
 
 I recommend always using the latest stable version of Hugo, because when fixing bugs or adding new features, the latest version is always the reference for me. It's very possible that within the `v4` major version, there are some updates that require updating the Hugo version.
 
@@ -134,14 +134,14 @@ Added a new GDPR-compliant cookie consent banner under the `[cookies]` configura
 
 ### Page Visibility (Hidden)
 
-The `hidden` front matter parameter, previously used to hide pages from lists, has been removed. It is replaced by Hugo's native `_build.list` option.
+The `hidden` front matter parameter, previously used to hide pages from lists, has been removed. It is replaced by Hugo's native `build.list` option.
 
 To hide a page, set its front matter to:
 
 ```yaml
 ---
-_build:
-    list: "local"
+build:
+    list: "never"
 ---
 ```
 
