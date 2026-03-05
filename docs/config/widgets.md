@@ -44,3 +44,14 @@ Display a tag cloud.
 
 - `limit`: number of tags to display. Default: 10
 
+### taxonomy
+
+Display a custom taxonomy (like categories, tags, or any other taxonomy you define). Can also replace the `categories` and `tag-cloud` widgets.
+
+#### Parameters
+
+- `taxonomy`: The name of the taxonomy to display (e.g., `"categories"`, `"tags"`, `"series"`).
+- `limit`: number of items to display. Default: 10
+- `icon`: An optional [SVG icon](menu.md#add-custom-icon) to display.
+- `showLink`: whether the title should link to the taxonomy page
+- `title`: custom title for the widget

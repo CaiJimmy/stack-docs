@@ -5,6 +5,7 @@
 Stack 目前支持以下评论系统：
 
 - [Cactus](https://cactus.chat/)
+- [Comentario](https://comentario.app/)
 - [Cusdis](https://cusdis.com/)
 - [Disqus](https://disqus.com/)
 - [DisqusJS](https://github.com/SukkaW/DisqusJS)
@@ -21,7 +22,7 @@ Stack 目前支持以下评论系统：
 例如，utterances 的配置选项放置在 `[Params.Comments.utterances]` 部分。
 
 ::: tip
-完整的支持的配置选项列表可以在 [此处](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config.yaml#L38) 找到。
+完整的支持的配置选项列表可以在 [配置文件](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml) 中查阅。
 
 有关每个配置选项含义的更多信息，请参阅对应评论系统的文档。
 :::
@@ -44,6 +45,7 @@ Stack 目前支持以下评论系统：
 评论系统提供商。可能的值包括：
 
 - `cactus`
+- `comentario`
 - `cusdis`
 - `disqus`
 - `disqusjs`

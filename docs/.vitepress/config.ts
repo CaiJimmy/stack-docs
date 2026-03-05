@@ -103,10 +103,13 @@ export default defineConfig({
             placement: 'stackjimmycaicom'
         },
 
-        algolia: {
-            appId: '6OC1XCG4R5',
-            apiKey: '7779946cc768ec3699123e60a91d0ddc',
-            indexName: 'stack-jimmycai',
+        search: {
+            provider: 'algolia',
+            options: {
+                appId: '6OC1XCG4R5',
+                apiKey: '7779946cc768ec3699123e60a91d0ddc',
+                indexName: 'stack-jimmycai',
+            }
         }
     },
 });
@@ -119,7 +122,8 @@ function sidebarGuide() {
             items: [
                 { text: 'About Stack', link: '/guide/' },
                 { text: 'Getting Started', link: '/guide/getting-started' },
-                { text: 'Modify Theme', link: '/guide/modify-theme' }
+                { text: 'Modify Theme', link: '/guide/modify-theme' },
+                { text: 'Upgrade to v4', link: '/guide/upgrade-to-v4' }
             ]
         },
         {
@@ -196,6 +200,10 @@ function sidebarGuide() {
                 {
                     text: 'Image Processing',
                     link: '/config/image-processing'
+                },
+                {
+                    text: 'Cookies (GDPR)',
+                    link: '/config/cookies'
                 }
             ]
         },
@@ -210,7 +218,8 @@ function sidebarGuideZh() {
             items: [
                 { text: '关于 Stack', link: '/zh/guide/' },
                 { text: '开始使用', link: '/zh/guide/getting-started' },
-                { text: '修改主题', link: '/zh/guide/modify-theme' }
+                { text: '修改主题', link: '/zh/guide/modify-theme' },
+                { text: '升级到 v4', link: '/zh/guide/upgrade-to-v4' }
             ]
         },
         {
@@ -287,6 +296,10 @@ function sidebarGuideZh() {
                 {
                     text: '图片处理',
                     link: '/zh/config/image-processing'
+                },
+                {
+                    text: 'Cookies 隐私免责声明',
+                    link: '/zh/config/cookies'
                 }
             ]
         },

@@ -23,33 +23,24 @@ hugo version
 输出应类似于以下内容（版本号可能不同），请注意 `extended` 关键字：
 
 ```
-hugo v0.102.3-b76146b129d7caa52417f8e914fc5b9271bf56fc+extended windows/amd64 BuildDate=2022-09-01T10:16:19Z VendorInfo=gohugoio
+hugo v0.157.0+extended+withdeploy darwin/arm64 BuildDate=2026-02-25T16:38:33Z VendorInfo=Homebrew
 ```
 
 最低要求的 Hugo 版本可以在 [主题的 `theme.toml` 文件](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/theme.toml#L23) 中查看。
 
 ## 安装
 
-### Git
-在 master 分支上，您可以找到主题的最新源代码。要使用最新版本，您可以运行以下命令将存储库克隆到 Hugo 站点的根目录下的 `themes/hugo-theme-stack`：
+### 快速入门 (Quickstart)
 
-```bash
-git clone https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
-```
+::: tip
+如果您是首次使用 Hugo，强烈推荐此方法！
+:::
 
-如果您已经为站点使用了 Git，可以运行以下命令将主题添加为子模块：
+使用 [starter template](https://github.com/CaiJimmy/hugo-theme-stack-starter) 启动模板可以快速搭建一个使用此主题的 Hugo 网站。该模板已配置好了 GitHub Action，在此基础上您对网站所做的任何更改都会自动构建并推送到 GitHub Pages 上。
 
-```bash
-git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
-```
+如果您在安装过程中遇到困难，这里有一个视频教程，演示了如何使用该模板建立一个新的 Hugo 网站，并将其部署到 GitHub Pages：https://www.youtube.com/watch?v=8qDdQQ6Ifxo
 
 ### Hugo 模块 (Hugo module)
-
-::: warning
-使用此方法，`themes` 目录下不会有任何文件。为了修改主题，您需要将想要修改的文件复制到 `layouts` 目录下对应的目录中。
-
-例如，要修改 `themes/hugo-theme-stack/layouts/partials/header.html` 文件，您需要将其复制到 `layouts/partials/header.html` 并在那里进行修改（从主题仓库中复制原始代码）。这同样适用于 `assets` 和 `static` 目录。
-:::
 
 此主题也可以作为 [Hugo 模块](https://gohugo.io/hugo-modules/) 使用。在您的 Hugo 站点根目录下运行以下命令：
 
@@ -62,30 +53,43 @@ hugo mod init github.com/me/my-new-blog
 然后通过在站点的配置文件中的 `module` 部分添加以下行来导入主题作为依赖项。
 
 ```toml
-# config.toml
+# hugo.toml
 [[module.imports]]
-path = "github.com/CaiJimmy/hugo-theme-stack/v3"
+    path = "github.com/CaiJimmy/hugo-theme-stack/v4"
 ```
 
-```yaml
-# config.yaml
-module:
-  imports:
-    - path: github.com/CaiJimmy/hugo-theme-stack/v3
-```
-
-这会使 Hugo 使用主题最新的稳定 `v3` 版本（在 release 页面提供，可能与 `master` 分支中的最新提交不一致）。
+这会使 Hugo 使用主题最新的稳定 `v4` 版本（可以在 release 页面上找到）。
 
 要将主题更新到最新版本，请运行以下命令：
 
 ```sh
-hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
+hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v4
 hugo mod tidy
 ```
 
 ::: info
 将来，如果主题发布了新的大版本，您需要手动更新 `path` 字段中的版本号。
 :::
+
+::: info
+使用此方法，`themes` 目录下不会有任何文件。为了修改主题，您需要将想要修改的文件复制到 `layouts` 目录下对应的目录中。
+
+例如，要修改 `themes/hugo-theme-stack/layouts/partials/header.html` 文件，您需要将其复制到 `layouts/partials/header.html` 并在那里进行修改（从主题仓库中复制原始代码）。这同样适用于 `assets` 和 `static` 目录。
+:::
+
+### Git
+
+要使用位于 master 分支上的最新源代码，请运行以下命令将主题存储库克隆到您 Hugo 站点的 `themes/hugo-theme-stack` 目录下：
+
+```bash
+git clone https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+```
+
+如果您已经为站点使用了 Git，可以运行以下命令将主题添加为子模块：
+
+```bash
+git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+```
 
 ### 手动下载 (不推荐)
 

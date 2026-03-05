@@ -2,7 +2,7 @@
 
 Settings related with left-side sidebar.
 
-Fields are under `[Params.Sidebar]` section.
+Fields are under `[sidebar]` section.
 
 ## compact
 
@@ -25,27 +25,7 @@ Subtitle displayed below the site title.
 
 ## avatar
 
-- Type: `map[string]:(bool|string)`
-
-Configurations related with avatar.
-
-### avatar.enabled
-
-- Type: `bool`
-- Default: `true`
-
-Enable avatar.
-
-### avatar.src
-
 - Type: `string`
 - Default: `img/avatar.png`
 
-Path to avatar image.
-
-### avatar.local
-
-- Type: `bool`
-- Default: `true`
-
-If `true`, the avatar image should be placed at `assets/${avatar.src}`, this allows theme to automatically resize the image.
+Path or URL to the avatar image. If using a local file, it should be placed in your `assets/` directory (e.g., `assets/img/avatar.png`).

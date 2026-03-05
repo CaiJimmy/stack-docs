@@ -5,6 +5,7 @@ Comment system is a very important part of a blog. It allows readers to express 
 Stack currently supports the following comment systems:
 
 - [Cactus](https://cactus.chat/)
+- [Comentario](https://comentario.app/)
 - [Cusdis](https://cusdis.com/)
 - [Disqus](https://disqus.com/)
 - [DisqusJS](https://github.com/SukkaW/DisqusJS)
@@ -21,7 +22,7 @@ Each comment system has its own configuration options placed under `[Params.Comm
 For example, utterances's configuration options are placed under `[Params.Comments.utterances]` section.
 
 ::: tip
-A full list of supported configuration options can be found in [here](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config.yaml#L38)
+A full list of supported configuration options can be found in the [configuration](https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml)
 
 For more information about the meaning of each configuration option, please refer to the documentation of the comment system.
 :::
@@ -44,6 +45,7 @@ Enable / disable comment system.
 Comment system provider. Possible values are:
 
 - `cactus`
+- `comentario`
 - `cusdis`
 - `disqus`
 - `disqusjs`

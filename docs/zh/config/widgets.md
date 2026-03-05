@@ -43,3 +43,16 @@
 #### 参数
 
 - `limit`: 要显示的标签数量。默认值：`10`
+
+### taxonomy (分类法)
+
+显示自定义分类法（如分类、标签或您定义的任何其他分类法）。也可用于替代 `categories` 和 `tag-cloud` 小部件。
+小部件的标题将会链接到该分类法的页面。
+
+#### 参数
+
+- `taxonomy`: 要显示的分类法名称（例如 `"categories"`, `"tags"`, `"series"`）。
+- `limit`: 要显示的项目数量。默认值：`10`
+- `icon`: 可选的 [SVG 图标](menu.md#add-custom-icon)。
+- `showLink`: 是否将标题链接到对应的分类法页面。
+- `title`: 小部件的自定义标题。

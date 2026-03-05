@@ -4,24 +4,38 @@
 
 如果您的站点中有很多图片，这可能会减慢构建过程。您可以在这里选择禁用此功能。
 
-## cover
+## autoOrient
 
-- 类型：`map[string]bool`
+- 类型：`bool`
+- 默认值：`false`
 
-### cover.enabled
+根据 EXIF 数据自动定位图象的方向。
+
+## thumbnail
+
+与缩略图生成相关的配置（例如用于瓦片式、紧凑式布局或 Open Graph）。
+
+### thumbnail.enabled
 
 - 类型：`bool`
 - 默认值：`true`
 
-为封面（特色）图片启用图片处理。
+为封面（特色）缩略图启用图像处理。
 
 ## content
 
-- 类型：`map[string]bool`
+与文章/页面内容中的图片相关的配置。
 
 ### content.enabled
 
 - 类型：`bool`
 - 默认值：`true`
 
-为内容中的图片启用图片处理。
+为内容中的图片启用图像处理，以提供响应式图片大小。
+
+### content.widths
+
+- 类型：`array`
+- 默认值：`[800, 1600, 2400]`
+
+指定通过 `srcset` 为不同屏幕尺寸生成响应式图片的特定宽度的数组。
