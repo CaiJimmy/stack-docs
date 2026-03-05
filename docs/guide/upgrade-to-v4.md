@@ -34,7 +34,13 @@ Now dates are displayed in localized format based on current site language. Chec
 
 See https://gohugo.io/functions/time/format/#localization for more information.
 
-Because this would only work if the language code matches with the one from [gohugoio/locales](https://github.com/gohugoio/locales) package, I had to rename `zh-cn` to `zh`. If you are using `zh-cn` as the key in `i18n` or `defaultContentLanguage`, you should change it to `zh`.
+Because this would only work if the language code matches with the one from [gohugoio/locales](https://github.com/gohugoio/locales) package, some Chinese language codes were renamed: 
+
+- `zh-cn` was renamed to `zh`
+- `zh-hk` was renamed to `zh-hant-hk`
+- `zh-tw` was renamed to `zh-hant-tw`
+
+If you are using any of these old values as the key in `i18n` or `defaultContentLanguage`, you should change them to their new respective codes.
 
 ### Images
 
@@ -145,7 +151,11 @@ build:
 ---
 ```
 
-## Sidebar Menu Icons
+### Sidebar Menu Icons
 
 The sidebar custom menus no longer support the `.Pre` parameter for icons. You will need to reconfigure or remove custom icons defined via `.Pre` in your menu configuration.
+
+### Default OpenGraph Image
+
+The `[opengraph]` configuration (`opengraph.local` and `opengraph.src`) for a fallback default OpenGraph/Twitter image when a page has no featured image has been dropped.
 

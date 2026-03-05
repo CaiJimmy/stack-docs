@@ -34,7 +34,13 @@ Hugo 最低版本要求已提升至 **v0.157.0**。
 
 相关更多信息，请参考 https://gohugo.io/functions/time/format/#localization。
 
-由于此功能仅当语言代码与 [gohugoio/locales](https://github.com/gohugoio/locales) 包中的代码完全匹配时才有效，因此我必须将 `zh-cn` 重命名为 `zh`。如果您在 `i18n` 或 `defaultContentLanguage` 中使用了 `zh-cn` 作为语言键值，则应将其更改为 `zh`。
+由于此功能仅当语言代码与 [gohugoio/locales](https://github.com/gohugoio/locales) 包中的代码完全匹配时才有效，部分中文语言代码已被重命名：
+
+- `zh-cn` 重命名为 `zh`
+- `zh-hk` 重命名为 `zh-hant-hk`
+- `zh-tw` 重命名为 `zh-hant-tw`
+
+如果您在 `i18n` 或 `defaultContentLanguage` 中使用了上述任何旧的语言代码，请将它们更改为相应的新代码。
 
 ### 图片
 
@@ -145,6 +151,10 @@ build:
 ---
 ```
 
-## 侧边栏菜单图标
+### 侧边栏菜单图标
 
 侧边栏自定义菜单不再支持通过 `.Pre` 参数设置图标。您需要重新配置或移除在菜单配置中使用的 `.Pre` 图标。
+
+### 默认 OpenGraph 图片
+
+提供文章无特色图片时的默认回退图片的 `[opengraph]` 配置（包含 `opengraph.local` 与 `opengraph.src`）已被弃用。

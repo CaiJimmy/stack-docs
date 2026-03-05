@@ -190,10 +190,6 @@ function sidebarGuide() {
                     link: '/config/open-graph'
                 },
                 {
-                    text: 'Default Image',
-                    link: '/config/default-image'
-                },
-                {
                     text: 'Color Scheme',
                     link: '/config/color-scheme'
                 },
@@ -284,10 +280,6 @@ function sidebarGuideZh() {
                 {
                     text: 'Open Graph',
                     link: '/zh/config/open-graph'
-                },
-                {
-                    text: '默认图片',
-                    link: '/zh/config/default-image'
                 },
                 {
                     text: '配色方案',

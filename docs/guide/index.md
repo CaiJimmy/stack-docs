@@ -38,7 +38,6 @@ Your support is greatly appreciated :)
 | ---------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | [PhotoSwipe](https://photoswipe.com/)                            | [MIT](https://github.com/dimsemenov/PhotoSwipe/blob/master/LICENSE)          |
 | [Normalize.css](https://github.com/necolas/normalize.css)        | [MIT](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)       |
-| [Node Vibrant](https://github.com/Vibrant-Colors/node-vibrant)   | [MIT](https://github.com/Vibrant-Colors/node-vibrant/blob/master/LICENSE.md) |
 | [Tabler icons](https://github.com/tabler/tabler-icons)           | [MIT](https://github.com/tabler/tabler-icons/blob/master/LICENSE)            |
 | [jonsuh/hamburgers](https://github.com/jonsuh/hamburgers)        | [MIT](https://github.com/jonsuh/hamburgers/blob/master/LICENSE)              |
 | [lepture/yue.css](https://github.com/lepture/yue.css)            | MIT                                                                          |
