@@ -27,7 +27,7 @@
 
 * 类型：`string|bool`
 * 适用于：单页
-* 默认值：`.Site.Params.Article.License.Default`
+* 默认值：`.Site.Params.article.license.default`
 
 页面的许可证。如果设置为 `false`，许可证部分将被隐藏。
 
@@ -42,7 +42,7 @@
 
 * 类型：`bool`
 * 适用于：单页
-* 默认值：`.Site.Params.Article.toc`
+* 默认值：`.Site.Params.article.toc`
 
 显示或隐藏页面的目录。
 
@@ -68,6 +68,6 @@
 ## readingTime
 
 * 类型：`bool`
-* 默认值：`.Site.Params.Article.ReadingTime`
+* 默认值：`.Site.Params.article.readingTime`
 
 显示或隐藏页面的阅读时间。

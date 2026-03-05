@@ -27,7 +27,7 @@ Show / hide comment section of the page.
 
 * Type: `string|bool`
 * Available in: single pages
-* Default: `.Site.Params.Article.License.Default`
+* Default: `.Site.Params.article.license.default`
 
 License of the page. If it's set to `false`, the license section will be hidden.
 
@@ -42,7 +42,7 @@ Enable / disable KaTeX rendering.
 
 * Type: `bool`
 * Available in: single pages
-* Default: `.Site.Params.Article.toc`
+* Default: `.Site.Params.article.toc`
 
 Show / hide table of contents of the page.
 
@@ -68,6 +68,6 @@ Keywords of the page. Useful for SEO.
 ## readingTime
 
 * Type: `bool`
-* Default: `.Site.Params.Article.ReadingTime`
+* Default: `.Site.Params.article.readingTime`
 
 Show / hide reading time of the page.
