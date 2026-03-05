@@ -17,13 +17,6 @@
 
 有关更多信息，请查看 Hugo 官方文档中的 [内容章节 (Content Sections)](https://gohugo.io/content-management/sections/)。
 
-## featuredImageField
-
-- 类型：`string`
-- 默认值：`image`
-
-用于获取页面特色图片的 Front Matter **字段**。
-
 ## rssFullContent
 
 - 类型：`bool`

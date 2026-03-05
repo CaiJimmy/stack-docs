@@ -17,13 +17,6 @@ Pages placed under this/those sections will be shown on homepage and archive pag
 
 For more information, take a look at Hugo's documentation on [Content Sections](https://gohugo.io/content-management/sections/).
 
-## featuredImageField
-
-- Type: `string`
-- Default: `image`
-
-Front Matter **field** used to get the featured image of a page. 
-
 ## rssFullContent
 
 - Type: `bool`
