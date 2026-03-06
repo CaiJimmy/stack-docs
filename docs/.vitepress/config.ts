@@ -146,6 +146,10 @@ function sidebarGuide() {
                     link: '/config/'
                 },
                 {
+                    text: 'Custom Homepage',
+                    link: '/guide/custom-homepage'
+                },
+                {
                     text: 'Site Configs',
                     link: '/config/site'
                 },
@@ -236,6 +240,10 @@ function sidebarGuideZh() {
                 {
                     text: '介绍',
                     link: '/zh/config/'
+                },
+                {
+                    text: '自定义主页',
+                    link: '/zh/guide/custom-homepage'
                 },
                 {
                     text: '站点配置',
