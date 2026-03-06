@@ -123,7 +123,11 @@ function sidebarGuide() {
                 { text: 'About Stack', link: '/guide/' },
                 { text: 'Getting Started', link: '/guide/getting-started' },
                 { text: 'Modify Theme', link: '/guide/modify-theme' },
-                { text: 'Upgrade to v4', link: '/guide/upgrade-to-v4' }
+                {
+                    text: 'Custom Homepage',
+                    link: '/guide/custom-homepage'
+                },
+                { text: 'Upgrade to v4', link: '/guide/upgrade-to-v4' },
             ]
         },
         {
@@ -144,10 +148,6 @@ function sidebarGuide() {
                 {
                     text: 'Introduction',
                     link: '/config/'
-                },
-                {
-                    text: 'Custom Homepage',
-                    link: '/guide/custom-homepage'
                 },
                 {
                     text: 'Site Configs',
@@ -219,6 +219,10 @@ function sidebarGuideZh() {
                 { text: '关于 Stack', link: '/zh/guide/' },
                 { text: '开始使用', link: '/zh/guide/getting-started' },
                 { text: '修改主题', link: '/zh/guide/modify-theme' },
+                {
+                    text: '自定义主页',
+                    link: '/zh/guide/custom-homepage'
+                },
                 { text: '升级到 v4', link: '/zh/guide/upgrade-to-v4' }
             ]
         },
@@ -240,10 +244,6 @@ function sidebarGuideZh() {
                 {
                     text: '介绍',
                     link: '/zh/config/'
-                },
-                {
-                    text: '自定义主页',
-                    link: '/zh/guide/custom-homepage'
                 },
                 {
                     text: '站点配置',
